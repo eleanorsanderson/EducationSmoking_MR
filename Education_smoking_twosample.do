@@ -40,8 +40,7 @@ keep if idoutcome == 962
 gen n = _n
 twoway (scatter Qsnp n, mcolor(black) msize(small)), ytitle(Contribution to Q statistic) yscale(range(0 15)) yline(3.8, lpattern(dash) lcolor(black)) yline(14.5, lpattern(dot) lcolor(black)) ///
 ylabel(#5) xtitle(SNP) xscale(range(0 330)) xlabel(none) title(Contribution to Q statistic for smoking intiation)
- graph save Graph "initiationQstat.gph", replace
- graph export "initiationQstat.png", as(png) replace
+
  
 restore
 preserve
@@ -49,8 +48,7 @@ keep if idoutcome == 963
 gen n = _n
 twoway (scatter Qsnp n, mcolor(black) msize(small)), ytitle(Contribution to Q statistic) yscale(range(0 15)) yline(3.8, lpattern(dash) lcolor(black)) yline(14.5, lpattern(dot) lcolor(black)) ///
 ylabel(#5) xtitle(SNP) xscale(range(0 330)) xlabel(none) title(Contribution to Q statistic for smoking cessation)
- graph save Graph "cessationQstat.gph", replace
- graph export "cessationQstat.png", as(png) replace
+
  
 restore
 
